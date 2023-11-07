@@ -1,3 +1,12 @@
+:root{
+  --css-primary: #34C94B;
+  --css-black: #121212;
+  --css-white: #FFFFFF;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
