@@ -13,7 +13,9 @@ function index() {
                   height: "48px", 
                   borderRadius:"8px 0px 0px 8px", 
                   flex: 1, 
-                  borderWidth: "1px"}}/>
+                  borderWidth: "1px",
+                  padding:"8px"
+                  }}/>
           <button 
               style={{ 
                   height: "48px", 
