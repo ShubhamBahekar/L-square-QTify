@@ -9,8 +9,7 @@ export default function Navbar(){
         <img src="qtifyLogo.png"  width={67} height={34}/>
         <SearchBox />
         <Button>Give Feedback</Button>
-    </div>
-    <div className="hero"><img src="heroImage.png" /></div> 
+    </div> 
     </> 
     )
     

@@ -1,0 +1,28 @@
+.searchButton{
+    height: 48px;
+    width: 66px;
+   border-radius: 0px 8px 8px 0px;
+   border-width: 1px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px ;             
+}
+
+.searchBar{
+    height: 48px;
+    border-radius:8px 0px 0px 8px;
+    flex: 1 ;
+    border-width: 1px;
+    padding:8px   ;          
+}
+.searchButtonImage{
+    width: 20px;
+    height: 20px ;
+}
+.searchForm{
+    min-width: 568Px;
+    display: flex;
+    border-width: 1px;
+    border-radius: 8px;
+}

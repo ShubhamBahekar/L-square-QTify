@@ -1,17 +1,21 @@
 import "./Card.css";
 
-export default function Card() {
+export default function Card({imgSrc,followersCount,label}) {
     return (
-        <span className="card">
-            <div className="Inside_Card">
-                <img src="albumImage.jpg" className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <span className="Followers">100 Follows</span>
+        <div className="card-wrapper">
+            <div className="card">
+            <div className="card-img-frame">
+               <img  className="card-img" src={imgSrc}/>
+            </div>
+            <div className="card-content">
+                <div className="card-content-pill">
+                 <span>{followersCount} Follows</span>
                 </div>
             </div>
-            <div>
-                <p className="Text">New Bollywood</p>
             </div>
-        </span>
+            <p className="card-label">
+               {label}
+            </p>
+        </div>
     );
 }
