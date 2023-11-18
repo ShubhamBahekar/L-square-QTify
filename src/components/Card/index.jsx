@@ -5,7 +5,7 @@ export default function Card({imgSrc,followersCount,label}) {
         <div className="card-wrapper">
             <div className="card">
             <div className="card-img-frame">
-               <img  className="card-img" src={imgSrc}/>
+               <img src={imgSrc}/>
             </div>
             <div className="card-content">
                 <div className="card-content-pill">
