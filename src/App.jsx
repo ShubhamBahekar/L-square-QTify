@@ -28,6 +28,7 @@ function App() {
       <Hero />
       <Section  title="Top Albums" data={topAlbums}/>
       <Section  title="New Albums" data={newAlbums}/>
+      
     </div>
   );
 }
