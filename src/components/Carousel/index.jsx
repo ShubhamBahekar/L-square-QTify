@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import  './carousel.css'
 
-export default function index({data})
+export default function index({data,type})
 {
     return ( 
     <div className="carousel-container">
@@ -16,17 +16,17 @@ export default function index({data})
         slidesPerView={8}
         spaceBetween={30}
         // navigation={true}
-        navigation ={{nextEl:".arrow-left" , prevEl:".arrow-right"}}
+        navigation={{ prevEl: ".arrow-left", nextEl: ".arrow-right" }}
 
         virtual
       >
        {data.map(cardData=>(
             <SwiperSlide   key={cardData.id}>
            <Card 
-           
+           type="songs"
            imgSrc={cardData.image} 
            label ={cardData.title}
-           followersCount={cardData.follows}
+           followersCount= {type==="songs"? cardData.likes:cardData.follows}
            />
              </SwiperSlide>
            ))}

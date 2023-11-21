@@ -3,12 +3,16 @@ import Navbar from './components/Navbar';
 import Hero from "./components/Hero";
 import Section from "./components/Section"
 import axios from 'axios';
+import SongsTab from './components/SongsTab';
+import FAQAccord from "./components/FAQAccord"
 
 const ENDPOINT = 'https://qtify-backend-labs.crio.do/'
 
 function App() {
   const [topAlbums , setTopAlbums] = useState([]);
   const [newAlbums , setNewAlbums] = useState([]);
+  const [newsongs , setNewSongs] = useState([]);
+  const[filteredDataValue , setFilteredDataValue] = useState([]);
 
   useEffect(()=>{
       
@@ -21,6 +25,12 @@ function App() {
       // console.log(data);
          setNewAlbums(data);
     })
+
+    axios.get(`${ENDPOINT}songs`).then(({data})=>{
+         setNewSongs(data);
+         console.log(data)
+    })
+
   },[])
   return (
     <div className="App"> 
@@ -28,7 +38,8 @@ function App() {
       <Hero />
       <Section  title="Top Albums" data={topAlbums}/>
       <Section  title="New Albums" data={newAlbums}/>
-      
+      <Section  title = "Songs"    data={newsongs} type="songs"/> 
+      <FAQAccord />
     </div>
   );
 }
