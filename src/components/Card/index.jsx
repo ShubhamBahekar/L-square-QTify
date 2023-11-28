@@ -1,6 +1,6 @@
 import "./Card.css";
 
-export default function Card({imgSrc,followersCount,label}) {
+export default function index({imgSrc,followersCount,label}) {
     return (
         <div className="card-wrapper">
             <div className="card">
