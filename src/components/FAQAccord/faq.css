@@ -2,5 +2,9 @@
 .accord{
     max-width: 60%;
     margin-left:20rem;
-    color: black;
+    
+}
+.ac{
+   background-color: black !important;
+   color: white !important;
 }

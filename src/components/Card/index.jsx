@@ -1,6 +1,6 @@
 import "./Card.css";
 
-export default function Card({imgSrc,followersCount,label,type}) {
+export default function Card({imgSrc,followersCount,label}) {
     return (
         <div className="card-wrapper">
             <div className="card">
@@ -9,8 +9,7 @@ export default function Card({imgSrc,followersCount,label,type}) {
             </div>
             <div className="card-content">
                 <div className="card-content-pill">
-                    {type==="songs"?<span>{followersCount} likes</span>:
-                 <span>{followersCount} Follows</span>}
+                 <span>{followersCount} Follows</span>
                 </div>
             </div>
             </div>

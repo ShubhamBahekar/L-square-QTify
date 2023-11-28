@@ -12,10 +12,10 @@ export default function BasicAccordion() {
         <div className="accord">
       <Accordion>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon sx={{fontSize: 34, color: 'success.dark' }} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
-          
+          className="ac"
         >
           <Typography>Is QTify free to use</Typography>
         </AccordionSummary>
@@ -27,9 +27,10 @@ export default function BasicAccordion() {
       </Accordion>
       <Accordion>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon sx={{fontSize: 34, color: 'success.dark' }} />}
           aria-controls="panel2a-content"
           id="panel2a-header"
+          className="ac"
         >
           <Typography>Can I download and listen to songs offline</Typography>
         </AccordionSummary>
