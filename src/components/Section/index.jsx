@@ -20,6 +20,7 @@ export default  function index({title,data,navId}){
             imgSrc={cardData.image} 
             label ={cardData.title}
             followersCount={cardData.follows}
+            songs ={cardData.songs.length}
             />
     
             ))}

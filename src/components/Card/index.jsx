@@ -1,7 +1,8 @@
 import "./Card.css";
-
-export default function index({imgSrc,followersCount,label}) {
+import { Tooltip } from "@mui/material";
+export default function index({songs,imgSrc,followersCount,label}) {
     return (
+        <Tooltip title={songs} placement="top">
         <div className="card-wrapper">
             <div className="card">
             <div className="card-img-frame">
@@ -17,5 +18,6 @@ export default function index({imgSrc,followersCount,label}) {
                {label}
             </p>
         </div>
+        </Tooltip>
     );
 }
